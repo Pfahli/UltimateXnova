@@ -45,7 +45,8 @@ if(empty($cronjobID))
 
 require 'includes/classes/Cronjob.class.php';
 
-$cronjobsTodo	= Cronjob::getNeedTodoExecutedJobs();
+$cronjobsTodo = Cronjob::getNeedTodoExecutedJobs();
+
 if(!in_array($cronjobID, $cronjobsTodo))
 {
 	exit;
